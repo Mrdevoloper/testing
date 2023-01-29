@@ -1,0 +1,52 @@
+### Create a new user
+POST http://localhost:4000/auth/signup
+content-type: application/json
+
+{
+  "email": "test@tsst.com",
+  "password": "test"
+}
+
+### Siginin a user
+POST http://localhost:4000/auth/signin
+content-type: application/json
+
+{
+  "email": "test@tsst.com",
+  "password": "test"
+}
+
+### Who am i
+GET  http://localhost:4000/auth/whoami
+
+### Sin out
+
+
+POST   http://localhost:4000/auth/signout
+
+
+
+
+
+
+
+### Find a particular user with a given ID
+GET http://localhost:4000/auth/4
+
+### Find all users with a given email
+GET http://localhost:4000/auth?email=asdf@asdf.com
+
+### Delete a user given id
+DELETE http://localhost:4000/auth/3
+
+### Update a user
+PATCH http://localhost:4000/auth/4
+content-type: application/json
+
+{
+  "password": "aaaaa"
+}
+
+### get colors
+
+
